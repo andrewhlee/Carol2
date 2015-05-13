@@ -1,0 +1,254 @@
+img {
+  max-width: 100%; }
+
+.navbar {
+  -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+  -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+  transition: background .5s ease-in-out,padding .5s ease-in-out;
+}
+
+.navbar-toggle .icon-bar {
+  color: #9AC0CD;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+    background-color: transparent;
+    color: #9AC0CD;
+}
+
+.navbar-custom {
+	background-color: #ffffff;
+}
+
+.navbar-custom ul.hover {
+	background-color: none;
+}
+
+.navbar-custom li a {
+	color: #3a3a3a;
+	font-weight: bold;
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+  transition: color .3s ease-in-out;
+}
+
+.navbar-custom li a:hover {
+  background-color: transparent;
+}
+
+.top-nav-collapse {
+  background-color: #3a3a3a;
+  padding: 5px;
+}
+
+.top-nav-collapse li a {
+  color: #fff;
+}
+
+.top-nav-collapse li a:hover {
+  color: #9AC0CD;
+}
+
+button #bars {
+  background-color: #fff;
+}
+
+.header-picture {
+	background: no-repeat center center;
+  background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.header-picture h1 {
+	color: #fff;
+  font-family: 'Dancing Script', cursive;
+	font-size: 7em;
+	font-weight: bold;
+  padding-top: 140px;
+}
+
+.header-picture .title {
+  margin-top: 14%;
+}
+
+@media only screen and (max-width: 994px) {
+  .header-picture .title {
+    margin-top: 15%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+	.header-picture {
+		height: 660px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+  .header-picture .subtitle {
+    visibility: hidden;
+  }
+}
+
+/********************** Start Post w/ Image Left *************************/
+.blogpost {
+  position: relative;
+  background: #ffffff; 
+  /*border-bottom: 1px solid #9AC0CD;*/
+}
+
+.post-image {
+  position: relative;
+  z-index: 1;
+  -webkit-transition: width 0.4s;
+  -moz-transition: width 0.4s;
+  transition: width 0.4s;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: width; 
+}
+
+@media only screen and (min-width: 1024px) {
+  .post-image {
+    width: 50%;
+  }
+}
+
+.post-preview {
+  padding: 50px 5%; 
+}
+
+.post-preview h2, .post-preview p {
+    max-width: 480px; 
+}
+
+.post-preview h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8rem;
+    font-weight: thin; 
+}
+
+.post-preview p {
+    line-height: 1.6;
+    margin: 1em 0;
+    color: #666666;
+  }
+
+.post-preview .read-more {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  padding: .8em 1.6em;
+  background-color: #9AC0CD;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0px; 
+}
+
+.post-preview .read-more:hover {
+  background-color: #fff;
+  border: 2px solid #9AC0CD;
+  color: #3a3a3a;
+}
+
+@media only screen and (min-width: 1024px) {
+  .post-preview {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    right: 0;
+    padding: 0 60px 0;
+    margin: 0;
+  } 
+}
+
+.pager {
+  margin: 40px 60px 0;
+}
+.pager li a,
+.pager li span {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 15px 25px;
+  background-color: white;
+  border-radius: 0;
+  color: #000;
+}
+.pager li a:hover,
+.pager li a:focus {
+  color: white;
+  background-color: #9AC0CD;
+  border: 1px solid #9AC0CD;
+}
+.pager .disabled a,
+.pager .disabled a:hover,
+.pager .disabled a:focus,
+.pager .disabled span {
+  color: #808080;
+  background-color: #404040;
+  cursor: not-allowed;
+}
+
+footer {
+  padding: 40px 0 40px;
+}
+
+footer a {
+	color: #ffa500;
+}
+
+footer a.hover {
+	color: #9AC0CD;
+}
+
+footer .copyright {
+	text-align: center;
+	margin-top: 30px;
+}
+
+/*-----------------------------------------------*/
+
+.about-title {
+  text-align: center;
+}
+
+.about-title h1 {
+  margin-top: 40px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.about-title p {
+  margin-top: 40px;
+  font-size: 1.3em;
+  font-weight: 200;
+}
+
+#contact h2 {
+  font-family: 'Dancing Script', cursive;
+  color: #3a3a3a;
+  font-size: 3em;
+  font-weight: bold;
+}
+
